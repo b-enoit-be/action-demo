@@ -1,6 +1,3 @@
-env:
-  COMPOSE_ENV_FILES: /dev/null
-
 on: [push]
 jobs:
   demo:
