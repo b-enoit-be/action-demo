@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: install -m 000 /dev/null .env
-      - run: docker compose build
+      - run: docker compose up -d
