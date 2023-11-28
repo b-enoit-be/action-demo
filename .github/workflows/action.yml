@@ -4,4 +4,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: install -m 000 /dev/null .env
       - run: docker compose build
