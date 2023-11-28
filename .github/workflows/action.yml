@@ -1,8 +1,11 @@
+env:
+  COMPOSE_ENV_FILES: /dev/null
+
 on: [push]
 jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: install -m 000 /dev/null .env
       - run: docker compose build
