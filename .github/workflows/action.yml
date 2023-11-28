@@ -3,4 +3,4 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world"
+      - run: docker compose build
